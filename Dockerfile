@@ -16,6 +16,6 @@ RUN git clone https://github.com/suderio/java-repl.git && \
     cd java-repl && \
     ant
 
-CMD java -jar build/artifacts/javarepl-dev.build.jar
+CMD java -showversion -Xms64m -Xmx512m -jar build/artifacts/javarepl-dev.build.jar
 
 

@@ -10,3 +10,12 @@ ENV JAVA_HOME /opt/jdk1.8.0_112
 
 RUN ln -s /opt/jdk1.8.0_112/bin/* /usr/local/bin/
 
+RUN apt-get -y install git maven ant
+
+RUN git clone https://github.com/albertlatacz/java-repl.git && \
+    cd java-repl && \
+    ant
+
+CMD java -jar build/artifacts/javarepl-dev.build.jar
+
+

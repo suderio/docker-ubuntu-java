@@ -12,7 +12,7 @@ RUN ln -s /opt/jdk1.8.0_112/bin/* /usr/local/bin/
 
 RUN apt-get -y install git maven ant
 
-RUN git clone https://github.com/albertlatacz/java-repl.git && \
+RUN git clone https://github.com/suderio/java-repl.git && \
     cd java-repl && \
     ant
 
